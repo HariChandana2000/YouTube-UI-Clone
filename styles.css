@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.material-icons {
+  color: rgb(96, 96, 96);
+}
+
+.left-icons {
+  display: flex;
+  gap: 10px;
+  width: 8%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search > form > input {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid rgb(223, 220, 220);
+  border-right: 0;
+  border-radius: 0;
+}
+
+.search > form > button {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 0;
+  border: 1px solid rgb(223, 220, 220);
+  border-left: 0;
+}
+
+.youtube-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: calc(100vh - 70px);
+}
+
+.side-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  height: 100%;
+  margin-top: 15px;
+  overflow-y: scroll;
+}
+
+.side-container::-webkit-scrollbar {
+  display: none;
+}
+
+.side-container > .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+  padding: 15px;
+  padding-left: 24px;
+}
+
+.side-container > .item:hover {
+  background-color: rgba(96, 96, 96, 0.2);
+  cursor: pointer;
+}
+
+hr {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(96, 96, 96, 0.2);
+}
+
+.videos {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  border-top: 1px solid rgba(96, 96, 96, 0.2);
+  overflow-y: scroll;
+}
+
+.videos > h1 {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.videos-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: 15px;
+  padding: 30px 30px;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video > img {
+  width: 310px;
+  height: 170px;
+}
+
+.video-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 310px;
+  margin-top: 5px;
+}
+
+.author > img {
+  width: 40px;
+  height: 40px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title > a {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  text-decoration: none;
+}
+
+.title > a:active,
+a:visited {
+  text-decoration: none;
+
+  color: rgb(96, 96, 96);
+}
+
+.title > span {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+}
